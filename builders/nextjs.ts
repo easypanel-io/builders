@@ -1,5 +1,10 @@
 import { createBuilder, joinLines } from "~builders-utils";
 
+/**
+ * This builder was adapted from the official Next.js Dockerfile
+ * https://github.com/vercel/next.js/blob/canary/examples/with-docker/Dockerfile
+ */
+
 export default createBuilder({
   name: "Next.js",
   schema: {
