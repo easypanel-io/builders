@@ -12,6 +12,14 @@ const nextConfig = {
       },
     });
 
+    config.module.rules.push({
+      test: /\.hbs/,
+      use: {
+        loader: "handlebars-loader",
+        options: {},
+      },
+    });
+
     return config;
   },
 };
